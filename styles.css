@@ -346,13 +346,17 @@ input:focus, textarea:focus{
 
   .grid{ grid-template-columns: 1fr; }
 }
+
+/* ---------------------------
+   Navigation
+---------------------------- */
 nav {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  background: linear-gradient(to right, #ffe8ef, #e0d7ff);
+  background: none; /* Removed gradient background */
   padding: 1rem;
-  border-radius: 12px;
+  border: none; /* Optional: remove rounded edges or border */
 }
 
 nav a {
@@ -369,10 +373,13 @@ nav a:hover {
 nav a.active {
   color: #7c3aed;
 }
+
+/* ---------------------------
+   General Styles
+---------------------------- */
 body {
   font-family: "Poppins", system-ui, -apple-system, sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom right, #fff6f9, #f7f4ff);
   color: #333;
 }
 
