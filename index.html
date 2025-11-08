@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumi Atelier — Handmade Accessories</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <meta name="description" content="Elegant handmade accessories — earrings, rings, and pendants crafted with love. Soft pastels, smooth interactions, and a modern shopping experience." />
+</head>
+<body>
+  <!-- Top announcement -->
+  <div class="announcement" role="status">
+    Free shipping on orders over $50 — new pastel collection just dropped ✨
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Lumi Atelier Home">
+        <span class="brand-mark">✧</span> Lumi Atelier
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label class="hamburger" for="navToggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#featured">Featured</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+        <a class="btn ghost" href="#bag" aria-label="Open shopping bag">Bag (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slide-out Bag (CSS-only; placeholder without JS) -->
+  <aside id="bag" class="bag-panel" aria-labelledby="bag-title">
+    <div class="bag-content">
+      <h2 id="bag-title">Your Shopping Bag</h2>
+      <p class="muted">
+        This is a CSS-only demo bag. To enable real “Add to Bag” and checkout,
+        connect a cart/checkout provider or add JavaScript. For now, use <em>Buy Now</em> to order a single item.
+      </p>
+
+      <ul class="bag-items">
+        <!-- Placeholder (non-functional w/o JS) -->
+        <li class="bag-empty">Your bag is empty.</li>
+      </ul>
+
+      <div class="bag-actions">
+        <a class="btn" href="#shop">Continue Shopping</a>
+        <a class="btn ghost" href="#" aria-label="Close bag">Close</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Handmade accessories in soft pastels</h1>
+        <p>
+          Discover elegant earrings, rings, and pendants crafted in small batches.
+          Gentle colors, timeless forms, and a touch of sparkle.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#featured">Shop Featured</a>
+          <a class="btn ghost" href="#shop">Browse All</a>
+        </div>
+      </div>
+      <div class="hero-showcase" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section id="featured" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Top Picks Right Now</h2>
+        <p class="muted">Curated bestsellers and fresh arrivals</p>
+      </div>
+
+      <!-- Horizontal scroll, snap -->
+      <div class="carousel" role="list">
+        <article class="card" role="listitem">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop" alt="Pearl-drop earrings in pastel rose" />
+            <span class="badge">New</span>
+          </div>
+          <div class="card-body">
+            <h3>Pearl-Drop Earrings</h3>
+            <p>Delicate rose hue with freshwater pearls. Lightweight for daily wear.</p>
+            <div class="price-action">
+              <span class="price">$38</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Pearl-Drop Earrings to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Pearl-Drop%20Earrings&body=Hi!%20I%27d%20love%20to%20order%20the%20Pearl-Drop%20Earrings.%20Please%20send%20me%20payment%20and%20shipping%20details.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1200&auto=format&fit=crop" alt="Minimal ring in pastel lilac" />
+            <span class="badge alt">Top</span>
+          </div>
+          <div class="card-body">
+            <h3>Arc Ring</h3>
+            <p>Minimal arch form with a soft lilac sheen. Stackable and sleek.</p>
+            <div class="price-action">
+              <span class="price">$29</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Arc Ring to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Arc%20Ring&body=Hi!%20I%27d%20love%20to%20order%20the%20Arc%20Ring.%20Please%20send%20me%20payment%20and%20shipping%20details.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=1200&auto=format&fit=crop" alt="Moon pendant in pastel blue" />
+            <span class="badge">Hot</span>
+          </div>
+          <div class="card-body">
+            <h3>Luna Pendant</h3>
+            <p>Crescent charm in soft blue enamel with gold-plated chain.</p>
+            <div class="price-action">
+              <span class="price">$42</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Luna Pendant to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Luna%20Pendant&body=Hi!%20I%27d%20love%20to%20order%20the%20Luna%20Pendant.%20Please%20send%20me%20payment%20and%20shipping%20details.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Grid -->
+  <section id="shop" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>All Products</h2>
+        <p class="muted">Browse the latest earrings, rings, and pendants</p>
+      </div>
+
+      <div class="grid">
+        <!-- Product Card -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1603565816278-1085114d6cfe?q=80&w=1200&auto=format&fit=crop" alt="Pastel mint stud earrings" />
+          </div>
+          <div class="card-body">
+            <h3>Mint Studs</h3>
+            <p>Pastel mint enamel on hypoallergenic posts.</p>
+            <div class="price-action">
+              <span class="price">$22</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Mint Studs to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Mint%20Studs&body=Hi!%20I%27d%20love%20to%20order%20the%20Mint%20Studs.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=1200&auto=format&fit=crop" alt="Rose quartz ring" />
+          </div>
+          <div class="card-body">
+            <h3>Rose Quartz Ring</h3>
+            <p>Soft-pink stone set in a gold-toned band.</p>
+            <div class="price-action">
+              <span class="price">$36</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Rose Quartz Ring to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Rose%20Quartz%20Ring&body=Hi!%20I%27d%20love%20to%20order%20the%20Rose%20Quartz%20Ring.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=1200&auto=format&fit=crop" alt="Cloud pendant" />
+          </div>
+          <div class="card-body">
+            <h3>Cloud Pendant</h3>
+            <p>Dreamy white enamel cloud on a dainty chain.</p>
+            <div class="price-action">
+              <span class="price">$34</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Cloud Pendant to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Cloud%20Pendant&body=Hi!%20I%27d%20love%20to%20order%20the%20Cloud%20Pendant.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1631048504002-9f3a4d0d9b41?q=80&w=1200&auto=format&fit=crop" alt="Iridescent drop earrings" />
+          </div>
+          <div class="card-body">
+            <h3>Iridescent Drops</h3>
+            <p>Opal-like shimmer with pastel undertones.</p>
+            <div class="price-action">
+              <span class="price">$31</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Iridescent Drops to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Iridescent%20Drops&body=Hi!%20I%27d%20love%20to%20order%20the%20Iridescent%20Drops.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Pastel blue enamel ring" />
+          </div>
+          <div class="card-body">
+            <h3>Azure Band</h3>
+            <p>Enamel ring in calm pastel blue; adjustable.</p>
+            <div class="price-action">
+              <span class="price">$27</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Azure Band to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Azure%20Band&body=Hi!%20I%27d%20love%20to%20order%20the%20Azure%20Band.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1200&auto=format&fit=crop" alt="Leaf pendant" />
+          </div>
+          <div class="card-body">
+            <h3>Leaflet Pendant</h3>
+            <p>Nature-inspired pendant with subtle gold highlights.</p>
+            <div class="price-action">
+              <span class="price">$33</span>
+              <div class="actions">
+                <a class="btn sm" href="#bag" aria-label="Add Leaflet Pendant to bag">Add to Bag</a>
+                <a class="btn sm ghost" href="mailto:orders@lumi.example?subject=Buy%20Leaflet%20Pendant&body=Hi!%20I%27d%20love%20to%20order%20the%20Leaflet%20Pendant.">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Get in Contact</h2>
+        <p class="muted">Custom requests, sizing, shipping — we’re here to help</p>
+      </div>
+
+      <form class="contact-form" action="mailto:hello@lumi.example" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="Name" type="text" required placeholder="Your name" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="Email" type="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="Message" rows="5" required placeholder="Hello! I’d like to ask about…"></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Lumi Atelier — Handmade with love</p>
+      <div class="footer-links">
+        <a href="#contact">Support</a>
+        <a href="#shop">Shop</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- No-JS year fallback -->
+  <noscript>
+    <style>#year::after{content:"2025"}</style>
+  </noscript>
+  <script>
+  console.log("Site loaded");
+  
+</script>
+</body>
+</html>
